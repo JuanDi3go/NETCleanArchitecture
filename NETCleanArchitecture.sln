@@ -3,9 +3,45 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SRC", "SRC", "{D317376E-1A32-4566-80AC-0D1103E59954}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Enterprise Business Rules", "1.Enterprise Business Rules", "{30CD3A6B-0DA5-41B3-B3FA-A1C1D944B205}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application Business Rules", "2.Application Business Rules", "{1923BF47-4A68-4ECD-A8F4-9DBB7F315FFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Interface Adapters", "3.Interface Adapters", "{CDB3A311-97DA-4D57-95B6-80E2CBDED70C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Frameworks and drivers", "4.Frameworks and drivers", "{09F54B40-2E01-4DDE-83F9-3F3E462BD8C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{3C6221CF-14C9-47AC-9287-1DCABE770545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sales.BusinessObjects", "NorthWind.Sales.BusinessObjects\NorthWind.Sales.BusinessObjects.csproj", "{7B9C9174-0AA6-4990-8F45-31BE4C1E3834}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C6221CF-14C9-47AC-9287-1DCABE770545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C6221CF-14C9-47AC-9287-1DCABE770545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C6221CF-14C9-47AC-9287-1DCABE770545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C6221CF-14C9-47AC-9287-1DCABE770545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B9C9174-0AA6-4990-8F45-31BE4C1E3834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9C9174-0AA6-4990-8F45-31BE4C1E3834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9C9174-0AA6-4990-8F45-31BE4C1E3834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9C9174-0AA6-4990-8F45-31BE4C1E3834}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30CD3A6B-0DA5-41B3-B3FA-A1C1D944B205} = {D317376E-1A32-4566-80AC-0D1103E59954}
+		{1923BF47-4A68-4ECD-A8F4-9DBB7F315FFD} = {D317376E-1A32-4566-80AC-0D1103E59954}
+		{CDB3A311-97DA-4D57-95B6-80E2CBDED70C} = {D317376E-1A32-4566-80AC-0D1103E59954}
+		{09F54B40-2E01-4DDE-83F9-3F3E462BD8C4} = {D317376E-1A32-4566-80AC-0D1103E59954}
+		{3C6221CF-14C9-47AC-9287-1DCABE770545} = {30CD3A6B-0DA5-41B3-B3FA-A1C1D944B205}
+		{7B9C9174-0AA6-4990-8F45-31BE4C1E3834} = {1923BF47-4A68-4ECD-A8F4-9DBB7F315FFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE88E906-3741-45BC-A86A-9C3F8E177670}
