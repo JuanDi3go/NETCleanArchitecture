@@ -15,7 +15,7 @@ namespace NorthWind.EFCore.Repositories.Repositories
 
         public async ValueTask CreateOrder(OrderAggregate order)
         {
-            < await _DbContext.AddAsync(order);
+            await _DbContext.AddAsync(order);
 
             foreach (var item in order.OrderDetails)
             {

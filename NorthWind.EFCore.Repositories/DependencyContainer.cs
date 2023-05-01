@@ -9,9 +9,9 @@ namespace NorthWind.EFCore.Repositories
 {
     public static class DependencyContainer
     {
-        public static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration, string conectionStringName)
         {
-            services.AddDbContext<NorthWindSalesContext>(op => op.UseSqlServer(configuration.GetConnectionString("")))
+            services.AddDbContext<NorthWindSalesContext>(op => op.UseSqlServer(configuration.GetConnectionString(conectionStringName)));
 
             services.AddScoped<INorthWindSalesCommandsRepository, NothWindSalesCommandsRepository>();
 
